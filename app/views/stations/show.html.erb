@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name of railway line:</strong>
+  <%= @station.name_of_railway_line %>
+</p>
+
+<p>
+  <strong>Station name:</strong>
+  <%= @station.station_name %>
+</p>
+
+<p>
+  <strong>How many mins walk:</strong>
+  <%= @station.how_many_mins_walk %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @station.place.property_name %>
+</p>
+
+
+<%= link_to 'Show Place', [@station] %> |
+<%= link_to 'Edit', edit_place_station_url(@place, @station) %> |
+<%= link_to 'Back', place_stations_path(@place) %>
