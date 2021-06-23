@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_of_railway_line: MyString
+  station_name: MyString
+  how_many_mins_walk: 1
+  place: one
+
+two:
+  name_of_railway_line: MyString
+  station_name: MyString
+  how_many_mins_walk: 1
+  place: two

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+<h1> Property List </h1>
+<p>
+  <strong>Property Name:</strong>
+  <%= @place.property_name %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @place.rent %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @place.address %>
+</p>
+
+<p>
+  <strong>Building Age:</strong>
+  <%= @place.building_age %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @place.remarks %>
+</p>
+
+<h2>Nearest Railway Line <% @station %></h2>
+<% for station in @place.stations %>
+
+
+<p>
+  <strong>Name of railway line:</strong>
+  <%= station.name_of_railway_line %></p>
+
+<p><strong>Station name:</strong>
+  <%= station.station_name %></p>
+
+<p><strong>How many mins walk:</strong>
+  <%= station.how_many_mins_walk %></p>
+ <% end %>
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Add Station', place_stations_path(@place) %> |
+<%= link_to 'Back', places_path %>
